@@ -1,3 +1,4 @@
+# 72ms, 14.4MB
 from array import array
 
 class Solution:
