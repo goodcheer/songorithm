@@ -10,3 +10,11 @@ class Solution:
                 print(f"grid[{i}][{j}] <- grid[{i-1}][{j}] + grid[{i}][{j-1}]")
                 grid[i][j] = grid[i-1][j] + grid[i][j-1]
         return grid[i][j]
+
+    
+if __name__ == "__main__":
+    sol = Solution()
+    assert sol.uniquePaths(3, 7) == 28
+    assert sol.uniquePaths(1, 7) == 1
+    assert sol.uniquePaths(199, 1) == 1
+    print("success")
